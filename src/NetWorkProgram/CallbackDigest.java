@@ -29,4 +29,14 @@ public class CallbackDigest implements Runnable {
 		}
 	}
 	
+	public static void main(String[] args) {
+		for(int i=0;i<args.length;i++){
+			File f = new File(args[i]);
+			CallbackDigest cb = new CallbackDigest(f);
+			Thread t = new Thread(cb);
+			t.start();
+		}
+	}
+	
+	
 }
