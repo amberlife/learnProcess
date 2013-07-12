@@ -2,10 +2,12 @@ package concurrency;
 
 class DualSynch{
 	private Object syncObject = new Object();
-	public synchronized void f(){
+	public  void f(){
+		synchronized(syncObject){
 		for(int i=0;i<5;i++){
 			System.out.println("f()");
 			Thread.yield();
+		}
 		}
 	}
 	public void g(){

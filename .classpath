@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/workspace/apache-mina-2.0.7-bin/apache-mina-2.0.7/dist/mina-core-2.0.7.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/netty/netty-3.6.6.Final/jar/netty-3.6.6.Final.jar" sourcepath="D:/workspace/netty/netty-3.6.6.Final/src/main"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
