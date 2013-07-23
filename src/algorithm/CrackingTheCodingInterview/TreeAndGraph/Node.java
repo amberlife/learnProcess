@@ -5,6 +5,7 @@ public class Node {
 	Node left;
 	Node right;
 	Node parent;
+	int hashValue;
 	
 	public static  void insert(Node node ,int x,Node p){
 		if(node==null){
@@ -35,6 +36,13 @@ public class Node {
 			insert(root,values[i],root);
 		}
 		return root;
+	}
+	public static String printTree(Node root){
+		if(root==null){
+			return "#";
+		}else{
+			return root.value+"("+printTree(root.left)+","+printTree(root.right)+")";
+		}
 	}
 	
 }
