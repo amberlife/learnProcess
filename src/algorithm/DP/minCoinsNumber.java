@@ -24,7 +24,7 @@ package algorithm.DP;
 public class minCoinsNumber {
 	public static void main(String[] args) {
 		int[] T = {1,3,5};
-		int[] D = new int[11];
+		int[] D = new int[12];
 	
 		D[0] = 0 ;
 		for(int i=1;i<D.length;i++){
@@ -36,7 +36,7 @@ public class minCoinsNumber {
 				}
 			}
 		}
-		System.out.println(D[10]);
+		System.out.println(D[11]);
 	
 	}
 }
